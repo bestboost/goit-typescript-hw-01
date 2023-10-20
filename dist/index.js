@@ -1,5 +1,9 @@
-function concatenation(firstWord, secondWord) {
-    console.log(`${firstWord} ${secondWord}`);
+import { concatenation } from "./concatenation";
+const button = document.querySelector("button");
+const input = document.querySelector("input");
+if (button && input) {
+    button.addEventListener("click", () => {
+        concatenation(input.value, "hello!");
+    });
 }
-export { concatenation };
 //# sourceMappingURL=index.js.map
